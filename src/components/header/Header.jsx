@@ -21,11 +21,7 @@ function Header() {
             <Wallets />
           </div>
           <div className=" lg:mt-0 lg:col-span-5 lg:flex">
-            <img
-              src="/public/LokiCrypto.png"
-              alt="mockup"
-              className="floating"
-            />
+            <img src="LokiCrypto.png" alt="mockups" className="floating" />
           </div>
         </div>
       </section>
