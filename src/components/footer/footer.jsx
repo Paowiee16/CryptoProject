@@ -16,7 +16,7 @@ const currentYear = new Date().getFullYear();
 
 export default function Example() {
   return (
-    <footer className=" w-screen">
+    <footer className=" w-screen ">
       <div className="mx-auto w-full max-w-7xl px-8">
         <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
           <Typography className="mb-6 font-montserrat text-primaryTxtColor">

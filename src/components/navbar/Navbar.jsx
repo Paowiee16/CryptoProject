@@ -21,22 +21,22 @@ export default function Example() {
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" className="p-1 font-normal">
         <a href="#" className="flex items-center  hover:text-primaryTxtColor">
-          Pages
+          Home
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center  hover:text-primaryTxtColor">
-          Account
+          Market
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center  hover:text-primaryTxtColor">
-          Blocks
+          Features
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
         <a href="#" className="flex items-center  hover:text-primaryTxtColor">
-          Docs
+          Contact
         </a>
       </Typography>
     </ul>
