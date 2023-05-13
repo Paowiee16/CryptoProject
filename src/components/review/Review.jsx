@@ -39,7 +39,7 @@ export default function Example() {
       <h1 className="text-4xl font-extrabold  md:text-5xl xl:text-6xl text-white align-text-bottom h-0 mt-32 ">
         Our Reviews
       </h1>
-      <Carousel className="w-4/5  h-2/5 ">
+      <Carousel className="w-4/5  h-3/5 ">
         {reviews.map((item) => (
           <Card
             key={item.name}

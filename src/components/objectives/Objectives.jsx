@@ -32,86 +32,44 @@ export default function Example() {
           Market Update
         </h1>
       </div>
-      <div className=" mx-auto  items-center justify-items-center gap-4 w-3/5 flex flex-wrap ">
-        {/* {data.map((item) => (
-          <div
-            key={item.name}
-            className=" p-5 bg-blue-900  w-40 h-80 justify-items-center items-center"
-          >
-            <div className="flex justify-center text-center ">
-              <Typography
-                color="white"
-                variant="h2"
-                className="font-bold font-montserrat"
-              >
-                {item.market_cap_rank}
-              </Typography>
-            </div>
-            <div className="flex justify-center text-center justify-items-center">
-              <img src={item.image} className="w-12 h-12" />
-            </div>
-            <div>
-              <Typography color="white" className="font-bold font-montserrat">
-                {item.name}
-              </Typography>
-
-              <Typography color="white" className="font-medium font-montserrat">
-                <span>&#8369;</span>
-                {item.current_price.toLocaleString()}
-              </Typography>
-            </div>
-            <div className="flex justify-center text-center">
-              {item.price_change_percentage_24h > 0 ? (
-                <span>
-                  <IoTrendingDown color="red" size={25} />
-                  <Typography
-                    color="red"
-                    className="flex items-center gap-2 font-bold "
-                  >
-                    {item.price_change_percentage_24h.toFixed(2)}{" "}
-                  </Typography>
-                </span>
-              ) : (
-                <span>
-                  <IoTrendingUp color="yellowgreen" size={25} />
-                  <Typography
-                    color="light-green"
-                    className="flex items-center gap-2 font-bold "
-                  >
-                    {item.price_change_percentage_24h.toFixed(2)}{" "}
-                  </Typography>
-                </span>
-              )}
-            </div>
-          </div>
-        ))} */}
-        <table className="table-auto w-full rounded-lg text-white bg-blue-gray-900 text-center p-5 overflow-auto min-w-fit">
+      <div className=" mx-auto  gap-4 w-3/5 flex justify-center ">
+        <table className="table-auto rounded-lg text-white bg-blue-900 text-center  overflow-auto ">
           <tr>
             {head.map((item) => (
-              <th key={item}>{item}</th>
+              <th key={item} className="lg:p-7   p-2  text-primaryTxtColor">
+                {item}
+              </th>
             ))}
           </tr>
           {data.map((item) => (
-            <tr key={item.name} className="text-center">
+            <tr key={item.name} className="text-center ">
               <td className="p-7">{item.market_cap_rank}</td>
               <td>
-                <img src={item.image} className="w-12 h-12" />
-              </td>
-              <td>{item.name}</td>
-              <td>
-                {" "}
-                <span>&#8369;</span> {item.current_price.toLocaleString()}
+                <img
+                  src={item.image}
+                  className="w-8 h-8 collapse md:visible lg:w-12 lg:h-12"
+                />
               </td>
               <td>
-                {item.price_change_percentage_24h > 0 ? (
-                  <span className="inline-flex gap-4">
+                <Typography className="font-monsterrat text-sm md:text-base">
+                  {item.name}
+                </Typography>
+              </td>
+              <td className="p-5 w-8">
+                <Typography className="font-monsterrat font-ligth text-xs text-justify md:text-base">
+                  <span>&#8369;{item.current_price.toLocaleString()}</span>
+                </Typography>
+              </td>
+              <td className="p-5 md:text-base">
+                {item.price_change_percentage_24h < 0 ? (
+                  <span className="inline-flex gap-2">
                     <IoTrendingDown color="red" size={25} />
                     <Typography color="red" className=" gap-2 font-bold ">
-                      {item.price_change_percentage_24h.toFixed(2)}{" "}
+                      {item.price_change_percentage_24h.toFixed(2)}
                     </Typography>
                   </span>
                 ) : (
-                  <span className="inline-flex gap-4">
+                  <span className="inline-flex gap-1">
                     <IoTrendingUp color="yellowgreen" size={25} />
                     <Typography
                       color="light-green"

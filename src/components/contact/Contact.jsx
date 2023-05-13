@@ -10,7 +10,7 @@ export default function Example() {
           Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
           velit quis. Duis tempor incididunt dolore.
         </p>
-        <div className="mt-6 w-screen max-w-md gap-x-4  flex justify-center align-middle ">
+        <div className="mt-6 w-screen max-w-md gap-x-4  flex justify-center align-middle p-5 ">
           <input
             id="email-address"
             name="email"

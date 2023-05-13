@@ -68,7 +68,7 @@ export default function Example() {
               as="a"
               href="#"
               color="white"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:text-primaryTxtColor"
             >
               <BsDiscord />
             </Typography>
@@ -77,7 +77,7 @@ export default function Example() {
               as="a"
               href="#"
               color="white"
-              className="opacity-80 transition-opacity hover:opacity-100"
+              className="opacity-80 transition-opacity hover:text-primaryTxtColor"
             >
               <BsTwitter />
             </Typography>
