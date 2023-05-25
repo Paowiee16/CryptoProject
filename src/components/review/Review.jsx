@@ -35,11 +35,11 @@ const reviews = [
 ];
 export default function Example() {
   return (
-    <div className="bg-partner w-screen  h-screen flex flex-wrap justify-center contents-center ">
-      <h1 className="text-4xl font-extrabold  md:text-5xl xl:text-6xl text-white align-text-bottom h-0 mt-32 ">
+    <div className="bg-partner w-screen  h-screen flex flex-wrap content-center justify-center contents-center text-center ">
+      <h1 className="text-4xl font-extrabold  md:text-5xl xl:text-6xl text-white  ">
         Our Reviews
       </h1>
-      <Carousel className="w-4/5  h-3/5 ">
+      <Carousel className="w-4/5  h-12/5   ">
         {reviews.map((item) => (
           <Card
             key={item.name}
