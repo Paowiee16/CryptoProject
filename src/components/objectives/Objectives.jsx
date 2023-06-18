@@ -50,7 +50,7 @@ export default function Example() {
                   alt={item.name}
                   width={16}
                   height={16}
-                  className="w-8 h-8 collapse md:visible lg:w-12 lg:h-12"
+                  className=" collapse md:visible lg:w-12 lg:h-12"
                 />
               </td>
               <td>
