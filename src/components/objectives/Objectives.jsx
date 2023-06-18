@@ -47,6 +47,7 @@ export default function Example() {
               <td>
                 <img
                   src={item.image}
+                  alt={item.name}
                   className="w-8 h-8 collapse md:visible lg:w-12 lg:h-12"
                 />
               </td>
