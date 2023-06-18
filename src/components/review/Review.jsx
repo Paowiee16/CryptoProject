@@ -66,7 +66,7 @@ export default function Example() {
               />
               <div className="flex justify-center items-center  gap-0.5 ">
                 <div>
-                  <Typography variant="h5" color="white">
+                  <Typography color="white" className="text-xl">
                     {item.name}
                   </Typography>
                   <Typography color="white">Works @ Somewhere</Typography>
