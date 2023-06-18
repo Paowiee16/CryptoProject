@@ -20,22 +20,34 @@ export default function Example() {
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography as="li" className="p-1 font-normal">
-        <a href="#" className="flex items-center  hover:text-primaryTxtColor">
+        <a
+          href="/Home"
+          className="flex items-center  hover:text-primaryTxtColor"
+        >
           Home
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <a href="#" className="flex items-center  hover:text-primaryTxtColor">
+        <a
+          href="/Market"
+          className="flex items-center  hover:text-primaryTxtColor"
+        >
           Market
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <a href="#" className="flex items-center  hover:text-primaryTxtColor">
+        <a
+          href="/Features"
+          className="flex items-center  hover:text-primaryTxtColor"
+        >
           Features
         </a>
       </Typography>
       <Typography as="li" variant="small" className="p-1 font-normal">
-        <a href="#" className="flex items-center  hover:text-primaryTxtColor">
+        <a
+          href="/Contact"
+          className="flex items-center  hover:text-primaryTxtColor"
+        >
           Contact
         </a>
       </Typography>
