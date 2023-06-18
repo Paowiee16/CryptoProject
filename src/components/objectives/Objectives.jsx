@@ -36,7 +36,7 @@ export default function Example() {
         <table className="table-auto rounded-lg text-white bg-blue-900 text-center  overflow-auto ">
           <tr>
             {head.map((item) => (
-              <th key={item} className="lg:p-7   p-2  text-primaryTxtColor">
+              <th key={item} className="lg:p-7   p-2  text-white">
                 {item}
               </th>
             ))}
