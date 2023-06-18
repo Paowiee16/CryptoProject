@@ -24,7 +24,7 @@ export default function Example() {
           </Typography>
           <div className="grid grid-cols-2 justify-between gap-4">
             {LINKS.map(({ title, items }) => (
-              <ul key={title}>
+              <div key={title}>
                 <Typography
                   variant="small"
                   color="white"
@@ -33,18 +33,17 @@ export default function Example() {
                   {title}
                 </Typography>
                 {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
-                      href="#"
-                      color="white"
-                      className="py-1.5 font-normal transition-colors hover:text-primaryTxtColor"
-                    >
-                      {link}
-                    </Typography>
-                  </li>
+                  <Typography
+                    key={link}
+                    as="a"
+                    href="#"
+                    color="white"
+                    className="py-1.5 font-normal transition-colors hover:text-primaryTxtColor"
+                  >
+                    {link}
+                  </Typography>
                 ))}
-              </ul>
+              </div>
             ))}
           </div>
         </div>
