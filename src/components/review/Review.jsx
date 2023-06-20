@@ -58,11 +58,12 @@ export default function Example() {
               shadow={false}
               className="mx-0  items-center gap-4 pt-0 pb-8 flex justify-center"
             >
-              <Avatar
-                variant="circular"
-                size="sm"
+              <img
                 src={item.image}
-                alt="candice wu"
+                loading="lazy"
+                width={50}
+                height={50}
+                className=" rounded-full overflow-hidden object-cover h-12"
               />
               <div className="flex justify-center items-center  gap-0.5 ">
                 <div>
