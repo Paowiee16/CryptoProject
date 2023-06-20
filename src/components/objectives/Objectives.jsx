@@ -67,17 +67,14 @@ export default function Example() {
                 {item.price_change_percentage_24h < 0 ? (
                   <span className="inline-flex gap-2">
                     <IoTrendingDown color="red" size={25} />
-                    <Typography color="red" className=" gap-2 font-bold ">
+                    <Typography color="white" className=" gap-2 font-bold ">
                       {item.price_change_percentage_24h.toFixed(2)}
                     </Typography>
                   </span>
                 ) : (
                   <span className="inline-flex gap-1">
                     <IoTrendingUp color="yellowgreen" size={25} />
-                    <Typography
-                      color="light-green"
-                      className="gap-2 font-bold "
-                    >
+                    <Typography color="white" className="gap-2 font-bold ">
                       {item.price_change_percentage_24h.toFixed(2)}{" "}
                     </Typography>
                   </span>
