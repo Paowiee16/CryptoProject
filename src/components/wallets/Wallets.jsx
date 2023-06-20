@@ -11,7 +11,7 @@ export default function Example() {
   return (
     <Menu>
       <MenuHandler>
-        <Button variant="gradient" size="lg" color="deep-purple" className=" ">
+        <Button variant="gradient" size="lg" color="deep-purple">
           Connect Wallet
         </Button>
       </MenuHandler>

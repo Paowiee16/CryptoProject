@@ -45,7 +45,7 @@ export default function Example() {
             key={item.name}
             color="transparent"
             shadow={false}
-            className="    flex justify-center "
+            className="flex justify-center "
           >
             <CardBody className=" p-0">
               <Typography color="white">
